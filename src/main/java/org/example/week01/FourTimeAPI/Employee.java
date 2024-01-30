@@ -1,19 +1,23 @@
-package org.example.week01.ThreeFunctionalInterfaces;
+package org.example.week01.FourTimeAPI;
+import java.util.Date;
+import java.util.Calendar;
+
 
 public class Employee {
     private String name;
-    private int age;
+    private Date dateOfBirth;
 
-    public Employee(String name, int age) {
+
+    public Employee(String name, int age, Date dateOfBirth) {
         this.name = name;
-        this.age=age;
+        this.dateOfBirth = dateOfBirth;
     }
 
     @Override
     public String toString() {
         return "Employee{" +
                 "name='" + name + '\'' +
-                ", age=" +age +
+                ", dateOfBirth=" + dateOfBirth +
                 '}';
     }
 
@@ -21,7 +25,9 @@ public class Employee {
         return name;
     }
 
-    public int getAge() {
-        return age;
+
+
+    public Date getDateOfBirth() {
+        return dateOfBirth;
     }
 }
