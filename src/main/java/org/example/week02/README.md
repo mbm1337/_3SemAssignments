@@ -1,4 +1,4 @@
-# Assignment Readme Guidelines
+# Week 2 assignments
 
 ## Overview
 
