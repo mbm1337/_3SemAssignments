@@ -2,9 +2,9 @@
 
 ## Overview
 
-- Your name
-- which assignment are included
-- which one are completed and which one are not
+- Morten Bomholt Mikkelsen
+- which assignment are included:
+ https://github.com/dat3Cph/material/blob/sem2024spring/flowJavaDD/JsonAndDTOsThreads/APIExercise.md
+ https://github.com/dat3Cph/material/blob/sem2024spring/flowJavaDD/JsonAndDTOsThreads/JsonExercise.md
+ https://github.com/dat3Cph/material/blob/sem2024spring/flowJavaDD/JsonAndDTOsThreads/exercise_threads.md
 
-## Friday presentation
-- add the friday presentation into the weekly folder
