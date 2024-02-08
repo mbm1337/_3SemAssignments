@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 
-class Task implements Callable<String> {
+class Task implements Callable<String>   {
     private char c;
 
     public Task(char c) {
@@ -17,6 +17,7 @@ class Task implements Callable<String> {
     public String call() throws Exception {
         return c + "" + c + "" + c;
     }
+
 }
 
 public class ExerciseOne {
@@ -25,7 +26,7 @@ public class ExerciseOne {
         ExecutorService executor = Executors.newFixedThreadPool(4);
         char c = 'A';
         for (int i = 0; i < 26; i++) {
-            Future<String> future = executor.submit(new Task(c));
+            Future future = executor.submit(new Task(c));
             try {
                 System.out.println(future.get());
             } catch (Exception e) {
