@@ -29,7 +29,7 @@ public class APIExercise {
 
     public static void main(String[] args) {
         APIExercise ap = new APIExercise();
-        List<MovieDTO> movies = new ArrayList();
+        List<MovieDTO> movies = new ArrayList<>();
         movies.add(ap.getMovie("tt0111161"));
         movies.add(ap.getMovie("tt0068646"));
         movies.add(ap.getMovie("tt0468569"));

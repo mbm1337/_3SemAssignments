@@ -26,7 +26,7 @@ public class ExerciseOne {
         ExecutorService executor = Executors.newFixedThreadPool(4);
         char c = 'A';
         for (int i = 0; i < 26; i++) {
-            Future future = executor.submit(new Task(c));
+            Future<String> future = executor.submit(new Task(c));
             try {
                 System.out.println(future.get());
             } catch (Exception e) {
