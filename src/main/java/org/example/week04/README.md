@@ -1,10 +1,9 @@
-# Assignment Readme Guidelines
+# Assignments week 4
 
 ## Overview
 
-- Your name
-- which assignment are included
-- which one are completed and which one are not
-
-## Friday presentation
-- add the friday presentation into the weekly folder
+- Morten Bomholt Mikkelsen
+- which assignment are included:
+- https://github.com/dat3Cph/material/blob/sem2024spring/flowJPA/week2/MondayDolphinExercise.md#dolphin-exercise-11-and-1m-relations
+- https://github.com/dat3Cph/material/blob/sem2024spring/flowJPA/week2/RecyclingExercise.md#recycling-exercise
+- 
