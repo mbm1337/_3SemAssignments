@@ -2,7 +2,7 @@ package org.example.week04.GLS;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
-import org.example.week03.GLS.Package;
+
 
 import java.util.List;
 

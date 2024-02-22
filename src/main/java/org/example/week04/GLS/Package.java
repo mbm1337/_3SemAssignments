@@ -3,7 +3,8 @@ package org.example.week04.GLS;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;
-
+import java.util.HashSet;
+import java.util.Set;
 
 
 @Entity
@@ -44,6 +45,10 @@ public class Package {
 
     @Column(name = "last_updated")
     private LocalDateTime lastUpdated;
+
+    @OneToMany(mappedBy = "aPackage")
+    private Set<Shipment> shipments = new HashSet<>();
+
 
     @PrePersist
     public void onPrePersist() {
