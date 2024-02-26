@@ -24,7 +24,7 @@ public class Person
 
     // Relationer 1:1
 
-    @OneToOne(mappedBy="person", cascade = CascadeType.ALL)
+    @OneToOne(mappedBy="person", cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
     private PersonDetail personDetail;
 
     public Person(String name)
