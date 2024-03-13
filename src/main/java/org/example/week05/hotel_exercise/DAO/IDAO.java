@@ -2,7 +2,7 @@ package org.example.week05.hotel_exercise.DAO;
 
 import java.util.List;
 
-public interface IDAO<T>{
+public interface IDAO<T, S>{
     public List<T> getAll();
     public T getById(int id);
     public T create(T t);

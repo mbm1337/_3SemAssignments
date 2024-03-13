@@ -1,13 +1,11 @@
 package org.example.week05.hotel_exercise.DAO;
 
 import jakarta.persistence.EntityManagerFactory;
-import org.example.week05.hotel_exercise.ressources.Hotel;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public abstract class DAO<T> implements IDAO<T>{
+public abstract class DAO<T> implements IDAO<T, S>{
     protected EntityManagerFactory emf;
     protected Map<Integer,T> entityMap;
 

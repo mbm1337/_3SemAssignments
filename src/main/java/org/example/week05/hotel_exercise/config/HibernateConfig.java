@@ -3,6 +3,8 @@ import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
 import org.example.week05.hotel_exercise.ressources.Hotel;
 import org.example.week05.hotel_exercise.ressources.Room;
+import org.example.week06.security.model.Role;
+import org.example.week06.security.model.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -79,6 +81,8 @@ public class HibernateConfig {
         // add annotated classes
         configuration.addAnnotatedClass(Hotel.class);
         configuration.addAnnotatedClass(Room.class);
+        configuration.addAnnotatedClass(User.class);
+        configuration.addAnnotatedClass(Role.class);
     }
 
     public static EntityManagerFactory getEntityManagerFactoryConfig(String name, boolean testing) {
@@ -90,5 +94,9 @@ public class HibernateConfig {
             if (entityManagerFactory == null) entityManagerFactory = buildEntityFactoryConfig();
             return entityManagerFactory;
         }
+    }
+
+    public static EntityManagerFactory getEntityManagerFactory() {
+        return entityManagerFactory;
     }
 }

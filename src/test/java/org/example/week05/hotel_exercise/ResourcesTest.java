@@ -118,7 +118,7 @@ class ResourcesTest {
                 .put("/hotel/4")
                 .then()
                 .statusCode(200)
-                .body("name", equalTo("Hotel California"))
+                .body("name", equalTo("Hotel California"));
     }
 
 
