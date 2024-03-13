@@ -1,9 +1,11 @@
 package org.example.week05.hotel_exercise.DAO;
 
-public interface IDAO {
-    void getAll();
-    void getById();
-    void create();
-    void update();
-    void delete();
+import java.util.List;
+
+public interface IDAO<T>{
+    public List<T> getAll();
+    public T getById(int id);
+    public T create(T t);
+    public T update(T t);
+    public void delete(T t);
 }

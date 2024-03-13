@@ -46,3 +46,4 @@ class Appointment{
         this.patientId = patientId;
     }
 }
+}

@@ -1,20 +1,57 @@
 package org.example.week05.hotel_exercise.DAO;
 
-public class HotelDAO extends DAO{
-    public void create() {
-        System.out.println("Creating hotel");
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.TypedQuery;
+import org.example.week05.hotel_exercise.ressources.Hotel;
+
+import java.util.Collection;
+import java.util.List;
+
+public class HotelDAO extends DAO<Hotel> {
+
+    public HotelDAO(EntityManagerFactory emf) {
+        super(emf);
     }
 
-    public void update() {
-        System.out.println("Updating hotel");
+    @Override
+    public List<Hotel> getAll() {
+        try(var em = emf.createEntityManager()){
+            TypedQuery<Hotel> q = em.createQuery("FROM Hotel h", Hotel.class);
+            List<Hotel> hotels = q.getResultList();
+            // hotels.forEach(h -> {
+            //     TypedQuery<Room> roomQuery = em.createQuery("SELECT r From Hotel h JOIN h.rooms r WHERE h.id = :id", Room.class);
+            //     roomQuery.setParameter("id", h.getId());
+            //     roomQuery.getResultList().forEach(r -> h.addRoom(r));
+            // });
+
+            return hotels;
+        }
     }
 
-    public void delete() {
-        System.out.println("Deleting hotel");
+    @Override
+    public Hotel getById(int id) {
+        try(var em = emf.createEntityManager()){
+            TypedQuery<Hotel> q = em.createQuery("FROM Hotel h WHERE h.id = :id", Hotel.class);
+            q.setParameter("id", id);
+            return q.getSingleResult();
+        }
     }
 
-    public void getAllRoomsByHotel() {
-        System.out.println("Getting all hotels");
+    @Override
+    public Hotel update(Hotel hotel) {
+        try(var em = emf.createEntityManager()){
+            em.getTransaction().begin();
+            em.merge(hotel);
+            em.getTransaction().commit();
+        }
+        return hotel;
     }
 
+    public Collection<Object> getHotelRooms(int id) {
+        try(var em = emf.createEntityManager()){
+            TypedQuery<Object> q = em.createQuery("SELECT r From Hotel h JOIN h.rooms r WHERE h.id = :id", Object.class);
+            q.setParameter("id", id);
+            return q.getResultList();
+        }
+    }
 }

@@ -1,13 +1,37 @@
 package org.example.week05.hotel_exercise.DAO;
 
-public abstract class DAO implements IDAO{
-    public void getAll() {
-        System.out.println("Getting all");
+import jakarta.persistence.EntityManagerFactory;
+import org.example.week05.hotel_exercise.ressources.Hotel;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public abstract class DAO<T> implements IDAO<T>{
+    protected EntityManagerFactory emf;
+    protected Map<Integer,T> entityMap;
+
+    public DAO(EntityManagerFactory emf) {
+        this.emf = emf;
+        entityMap = new HashMap<>();
     }
 
-    public void getById() {
-        System.out.println("Getting by id");
-
+    @Override
+    public T create(T t) {
+        try(var em = emf.createEntityManager()){
+            em.getTransaction().begin();
+            em.persist(t);
+            em.getTransaction().commit();
+        }
+        return t;
     }
 
+    @Override
+    public void delete(T t) {
+        try(var em = emf.createEntityManager()){
+            em.getTransaction().begin();
+            em.remove(t);
+            em.getTransaction().commit();
+        }
+    }
 }

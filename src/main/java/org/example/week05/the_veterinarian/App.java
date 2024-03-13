@@ -11,6 +11,7 @@ public class App {
                 .start(7007);
         app.routes(getAppointments());
         app.routes(getPatients());
+
     }
 
     private static EndpointGroup getAppointments() {
