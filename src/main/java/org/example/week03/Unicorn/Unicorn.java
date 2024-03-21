@@ -1,4 +1,4 @@
-package org.example.week03.Unicorn;
+package main.java.org.example.week03.Unicorn;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;

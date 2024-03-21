@@ -1,4 +1,4 @@
-package org.example.week04.DolphinExercise;
+package main.java.org.example.week04.DolphinExercise;
 
 import jakarta.persistence.*;
 import lombok.Getter;

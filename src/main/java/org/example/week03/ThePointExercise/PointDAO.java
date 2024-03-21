@@ -1,4 +1,4 @@
-package org.example.week03.ThePointExercise;
+package main.java.org.example.week03.ThePointExercise;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;

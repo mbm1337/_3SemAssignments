@@ -1,4 +1,4 @@
-package org.example.week04.SchoolWxercise;
+package main.java.org.example.week04.SchoolWxercise;
 
 public class StudentInfo {
     private String fullName;

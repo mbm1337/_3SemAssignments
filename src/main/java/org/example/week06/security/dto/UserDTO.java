@@ -1,9 +1,10 @@
-package org.example.week06.security.dto;
+package main.java.org.example.week06.security.dto;
 
-import org.example.week06.security.model.User;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import main.java.org.example.week06.security.model.User;
 
 import java.util.ArrayList;
 import java.util.List;

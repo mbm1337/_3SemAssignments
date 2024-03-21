@@ -1,7 +1,6 @@
-package org.example.week05.hotel_exercise.DTO;
+package main.java.org.example.week05.hotel_exercise.DTO;
 
-
-import org.example.week05.hotel_exercise.ressources.Room;
+import main.java.org.example.week05.hotel_exercise.ressources.Room;
 
 import java.util.List;
 

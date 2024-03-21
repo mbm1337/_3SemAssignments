@@ -1,9 +1,10 @@
-package org.example.week05.hotel_exercise.DAO;
+package main.java.org.example.week05.hotel_exercise.DAO;
 
 import jakarta.persistence.EntityManagerFactory;
-import org.example.week05.hotel_exercise.config.HibernateConfig;
-import org.example.week05.hotel_exercise.ressources.Hotel;
-import org.example.week05.hotel_exercise.ressources.Room;
+
+import main.java.org.example.week05.hotel_exercise.config.HibernateConfig;
+import main.java.org.example.week05.hotel_exercise.ressources.Hotel;
+import main.java.org.example.week05.hotel_exercise.ressources.Room;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

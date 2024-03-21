@@ -1,4 +1,4 @@
-package org.example.week04.RecyclingExercise.model;
+package main.java.org.example.week04.RecyclingExercise.model;
 
 
 import jakarta.persistence.*;

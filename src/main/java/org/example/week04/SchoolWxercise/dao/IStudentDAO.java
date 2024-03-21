@@ -1,9 +1,11 @@
-package org.example.week04.SchoolWxercise.dao;
+package main.java.org.example.week04.SchoolWxercise.dao;
 
-import org.example.week04.SchoolWxercise.Semester;
-import org.example.week04.SchoolWxercise.Student;
-import org.example.week04.SchoolWxercise.StudentInfo;
-import org.example.week04.SchoolWxercise.Teacher;
+
+
+import main.java.org.example.week04.SchoolWxercise.Semester;
+import main.java.org.example.week04.SchoolWxercise.Student;
+import main.java.org.example.week04.SchoolWxercise.StudentInfo;
+import main.java.org.example.week04.SchoolWxercise.Teacher;
 
 import java.util.List;
 

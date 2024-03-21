@@ -1,4 +1,4 @@
-package org.example.week01.ThreeFunctionalInterfaces;
+package main.java.org.example.week01.ThreeFunctionalInterfaces;
 
 public class Employee {
     private String name;

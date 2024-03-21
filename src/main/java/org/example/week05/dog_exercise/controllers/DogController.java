@@ -1,4 +1,4 @@
-package org.example.week05.dog_exercise.controllers;
+package main.java.org.example.week05.dog_exercise.controllers;
 
 import io.javalin.http.Handler;
 

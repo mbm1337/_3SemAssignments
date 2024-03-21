@@ -1,4 +1,4 @@
-package org.example.week06.security;
+package main.java.org.example.week06.security;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nimbusds.jose.JOSEException;
@@ -7,8 +7,10 @@ import com.nimbusds.jwt.SignedJWT;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-import org.example.week06.security.dto.UserDTO;
-import org.example.week06.security.exception.AuthorizationException;
+
+import main.java.org.example.week06.security.dto.UserDTO;
+import main.java.org.example.week06.security.exception.AuthorizationException;
+import main.java.org.example.week05.hotel_exercise.config.ApplicationConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,16 +44,11 @@ public class TokenFactory {
 
     // Get properties from pom file
     private String[] getProperties() {
-        try {
-            String[] properties = new String[3];
-           properties[0] = ApplicationConfig.getProperty("issuer");
-            properties[1] = ApplicationConfig.getProperty("token.expiration.time");
-            properties[2] = ApplicationConfig.getProperty("secret.key");
-            return properties;
-        } catch (IOException e) {
-            LOGGER.error("Could not get properties", e);
-        }
-        return null;
+        String[] properties = new String[3];
+        properties[0] = ApplicationConfig.getProperty("issuer");
+        properties[1] = ApplicationConfig.getProperty("token.expiration.time");
+        properties[2] = ApplicationConfig.getProperty("secret.key");
+        return properties;
     }
 
     public String[] parseJsonObject(String jsonString, Boolean tryLogin) throws ApiException {
@@ -66,7 +63,9 @@ public class TokenFactory {
 
             if (!tryLogin) {
                 role = json.get("role").toString();
-                if (!roles.contains(role)) throw new ApiException(400, "Role not valid");
+                if (!roles.contains(role)) {
+                    throw new ApiException(400, "Invalid role");
+                }
             }
 
             return new String[]{username, password, role};

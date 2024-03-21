@@ -1,4 +1,4 @@
-package org.example.week01.OneLambda;
+package main.java.org.example.week01.OneLambda;
 
 public class Lambda {
 

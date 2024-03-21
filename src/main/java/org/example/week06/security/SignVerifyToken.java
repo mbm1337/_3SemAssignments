@@ -1,12 +1,12 @@
-package org.example.week06.security;
+package main.java.org.example.week06.security;
 
 import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.MACSigner;
 import com.nimbusds.jose.crypto.MACVerifier;
 import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
-import org.example.week06.security.dto.UserDTO;
-import org.example.week06.security.exception.AuthorizationException;
+import main.java.org.example.week06.security.dto.UserDTO;
+import main.java.org.example.week06.security.exception.AuthorizationException;
 
 
 import java.text.ParseException;

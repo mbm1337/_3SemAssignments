@@ -1,8 +1,7 @@
-package org.example.week03.GLS;
+package main.java.org.example.week03.GLS;
 
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
-import org.example.week03.DAOExercise.Student;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;

@@ -1,10 +1,10 @@
-# Assignment Readme Guidelines
+# Assignment for week 07
 
 ## Overview
 
-- Your name
-- which assignment are included
-- which one are completed and which one are not
+- Morten Bomholt Mikkelsen
+- which assignment are included:
+- https://github.com/dat3Cph/material/blob/sem2024spring/flowWeb/3_cicd/Exercise_Wedn.md
+- I made this with a single method instead of dividing it into multiple methods.
+- https://github.com/dat3Cph/material/blob/sem2024spring/flowWeb/3_cicd/Exercise_monday.md
 
-## Friday presentation
-- add the friday presentation into the weekly folder

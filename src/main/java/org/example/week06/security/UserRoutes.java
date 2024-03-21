@@ -1,4 +1,4 @@
-package org.example.week06.security;
+package main.java.org.example.week06.security;
 
 import io.javalin.apibuilder.EndpointGroup;
 
@@ -12,8 +12,21 @@ public class UserRoutes {
 
         return () -> {
             path("/auth", () -> {
-                post("/login", userController::login, RouteRoles.ANYONE);
-                post("/register", userController::register, RouteRoles.ANYONE);
+                post("/login", ctx -> {
+                    try {
+                        userController.login(ctx);
+                    } catch (ApiException e) {
+                        ctx.status(400).result(e.getMessage());
+                    }
+                }, RouteRoles.ANYONE);
+
+                post("/register", ctx -> {
+                    try {
+                        userController.register(ctx);
+                    } catch (ApiException e) {
+                        ctx.status(400).result(e.getMessage());
+                    }
+                }, RouteRoles.ANYONE);
             });
         };
     }

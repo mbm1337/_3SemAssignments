@@ -1,4 +1,4 @@
-package org.example.week03.Lombok;
+package main.java.org.example.week03.Lombok;
 
 public class PersonNoLombok {
     private String firstName;

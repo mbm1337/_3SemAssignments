@@ -1,7 +1,8 @@
-package org.example.week05.hotel_exercise;
+package main.java.org.example.week05.hotel_exercise;
 
 import io.restassured.RestAssured;
-import org.example.week05.hotel_exercise.config.ApplicationConfig;
+
+import main.java.org.example.week05.hotel_exercise.config.ApplicationConfig;
 import org.junit.jupiter.api.*;
 
 import static org.hamcrest.Matchers.contains;
@@ -14,7 +15,7 @@ class ResourcesTest {
     @BeforeAll
     static void setUpAll() {
         RestAssured.baseURI = "http://localhost:7777/api";
-        Main.main(null);
+
 
     }
 

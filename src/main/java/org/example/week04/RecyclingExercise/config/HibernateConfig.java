@@ -1,11 +1,8 @@
-package org.example.week04.RecyclingExercise.config;
+package main.java.org.example.week04.RecyclingExercise.config;
 
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
-import org.example.week04.DolphinExercise.Fee;
-import org.example.week04.DolphinExercise.Note;
-import org.example.week04.DolphinExercise.Person;
-import org.example.week04.DolphinExercise.PersonDetail;
+
 import org.example.week04.RecyclingExercise.model.Driver;
 import org.example.week04.RecyclingExercise.model.WasteTruck;
 import org.hibernate.SessionFactory;

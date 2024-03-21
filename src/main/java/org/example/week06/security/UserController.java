@@ -1,13 +1,12 @@
-package org.example.week06.security;
+package main.java.org.example.week06.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import io.javalin.http.Context;
 import jakarta.persistence.EntityManagerFactory;
-import org.example.week06.security.exception.ApiException;
-import org.example.week06.security.exception.AuthorizationException;
-import org.example.week06.security.model.User;
-import org.example.week05.hotel_exercise.config.HibernateConfig;
+import main.java.org.example.week05.hotel_exercise.config.HibernateConfig;
+import main.java.org.example.week06.security.exception.AuthorizationException;
+import main.java.org.example.week06.security.model.User;
 
 
 import java.util.Set;
@@ -23,7 +22,8 @@ public class UserController {
 
     }
 
-    public void login(Context ctx) throws ApiException, AuthorizationException, org.example.week06.security.ApiException {
+    public void login(Context ctx) throws AuthorizationException, ApiException {
+
         String[] userInfos = getUserInfos(ctx, true);
         User user = getVerfiedOrRegisterUser(userInfos[0], userInfos[1], "", false);
         String token = getToken(userInfos[0], user.getRolesAsStrings());
@@ -31,9 +31,10 @@ public class UserController {
         // Create response
         ctx.status(200);
         ctx.result(createResponse(userInfos[0], token));
+
     }
 
-    public void register(Context ctx) throws ApiException, AuthorizationException, org.example.week06.security.ApiException {
+    public void register(Context ctx) throws ApiException, AuthorizationException {
         String[] userInfos = getUserInfos(ctx, false);
         User user = getVerfiedOrRegisterUser(userInfos[0], userInfos[1], userInfos[2], true);
         String token = getToken(userInfos[0], user.getRolesAsStrings());
@@ -51,7 +52,7 @@ public class UserController {
         return responseJson.toString();
     }
 
-    private String[] getUserInfos(Context ctx, boolean tryLogin) throws ApiException, org.example.week06.security.ApiException {
+    private String[] getUserInfos(Context ctx, boolean tryLogin) throws ApiException {
         String request = ctx.body();
         return tokenFactory.parseJsonObject(request, tryLogin);
     }
@@ -61,7 +62,7 @@ public class UserController {
 
     }
 
-    private String getToken(String username, Set<String> userRoles) throws ApiException, org.example.week06.security.ApiException {
+    private String getToken(String username, Set<String> userRoles) throws ApiException {
         return tokenFactory.createToken(username, userRoles);
     }
 }

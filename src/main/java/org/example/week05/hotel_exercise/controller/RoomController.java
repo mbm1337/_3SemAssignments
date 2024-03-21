@@ -1,11 +1,11 @@
-package org.example.week05.hotel_exercise.controller;
+package main.java.org.example.week05.hotel_exercise.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import org.example.week05.hotel_exercise.DAO.RoomDAO;
 import io.javalin.http.Handler;
+import main.java.org.example.week05.hotel_exercise.DAO.RoomDAO;
 
-    public class RoomController implements IController{
+public class RoomController implements IController{
         private RoomDAO roomDAO;
 
         private final ObjectMapper objectMapper = new ObjectMapper();

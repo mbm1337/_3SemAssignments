@@ -1,4 +1,4 @@
-package org.example.week01.EightGenerics;
+package main.java.org.example.week01.EightGenerics;
 
 import java.io.*;
 import java.lang.reflect.Type;

@@ -1,4 +1,4 @@
-package org.example.week04.GLS;
+package main.java.org.example.week04.GLS;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -11,7 +11,7 @@ public class PackageDAO {
 
 
 
-    public void save(org.example.week04.GLS.Package aPackage) {
+    public void save(Package aPackage) {
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         em.persist(aPackage);
@@ -20,14 +20,14 @@ public class PackageDAO {
     }
 
     //TODO: FIX!
-    public org.example.week04.GLS.Package findByTrackingNumber(String trackingNumber) {
+    public Package findByTrackingNumber(String trackingNumber) {
         EntityManager em = emf.createEntityManager();
-        org.example.week04.GLS.Package foundPackage = em.find(org.example.week04.GLS.Package.class, trackingNumber);
+        Package foundPackage = em.find(Package.class, trackingNumber);
         em.close();
         return foundPackage;
     }
 
-    public void update(org.example.week04.GLS.Package aPackage) {
+    public void update(Package aPackage) {
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         em.merge(aPackage);
@@ -38,7 +38,7 @@ public class PackageDAO {
     public void delete(String trackingNumber) {
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
-        org.example.week04.GLS.Package aPackage = findByTrackingNumber(trackingNumber);
+        Package aPackage = findByTrackingNumber(trackingNumber);
         if (aPackage != null) {
             em.remove(aPackage);
         }
@@ -47,9 +47,9 @@ public class PackageDAO {
     }
 
 
-    public List<org.example.week04.GLS.Package> findAll() {
+    public List<Package> findAll() {
         EntityManager em = emf.createEntityManager();
-        List<org.example.week04.GLS.Package> packages = em.createQuery("SELECT p FROM Package p", org.example.week04.GLS.Package.class).getResultList();
+        List<Package> packages = em.createQuery("SELECT p FROM Package p", Package.class).getResultList();
         em.close();
         return packages;
     }

@@ -1,4 +1,4 @@
-package org.example.week03.DAOExercise;
+package main.java.org.example.week03.DAOExercise;
 
 import jakarta.persistence.*;
 import lombok.*;

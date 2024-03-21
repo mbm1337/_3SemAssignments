@@ -1,4 +1,4 @@
-package org.example.week03.JPAStarterProject;
+package main.java.org.example.week03.JPAStarterProject;
 
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;

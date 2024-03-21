@@ -1,4 +1,4 @@
-package org.example.week01.TwoFunctionalProgramming;
+package main.java.org.example.week01.TwoFunctionalProgramming;
 
 public class FunctionalProgramming {
 

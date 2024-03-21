@@ -1,11 +1,13 @@
-package org.example.week04.RecyclingExercise;
+package main.java.org.example.week04.RecyclingExercise;
 
-import org.example.week04.RecyclingExercise.config.HibernateConfig;
-import org.example.week04.RecyclingExercise.dao.*;
-import org.example.week04.RecyclingExercise.model.*;
+
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
+import main.java.org.example.week04.RecyclingExercise.config.HibernateConfig;
+import main.java.org.example.week04.RecyclingExercise.dao.DriverDAOImpl;
+import main.java.org.example.week04.RecyclingExercise.dao.WasteTruckDAOImpl;
+import main.java.org.example.week04.RecyclingExercise.model.Driver;
 
 import java.math.BigDecimal;
 import java.util.List;

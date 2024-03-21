@@ -1,4 +1,4 @@
-package org.example.week03.ThePointExercise;
+package main.java.org.example.week03.ThePointExercise;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+
 class PointDAOTest {
     static EntityManagerFactory emf = HibernateConfig.getEntityManagerFactoryConfig();
     static EntityManager em = emf.createEntityManager();

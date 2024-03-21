@@ -1,4 +1,4 @@
-package org.example.week05.hotel_exercise.config;
+package main.java.org.example.week05.hotel_exercise.config;
 
 import io.javalin.Javalin;
 
@@ -22,5 +22,9 @@ public class ApplicationConfig {
 
     public static void stopServer() {
         app.stop();
+    }
+
+    public static String getProperty(String issuer) {
+        return null;
     }
 }

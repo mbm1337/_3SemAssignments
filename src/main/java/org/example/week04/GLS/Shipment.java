@@ -1,9 +1,8 @@
-package org.example.week04.GLS;
+package main.java.org.example.week04.GLS;
 
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.example.week03.GLS.Package;
 
 import java.util.Date;
 

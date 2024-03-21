@@ -1,4 +1,4 @@
-package org.example.week01.NineConcurrency;
+package main.java.org.example.week01.NineConcurrency;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;

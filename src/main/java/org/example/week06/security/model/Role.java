@@ -1,4 +1,4 @@
-package org.example.week06.security.model;
+package main.java.org.example.week06.security.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

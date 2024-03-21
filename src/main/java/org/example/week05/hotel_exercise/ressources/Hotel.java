@@ -1,9 +1,9 @@
-package org.example.week05.hotel_exercise.ressources;
+package main.java.org.example.week05.hotel_exercise.ressources;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
-import org.example.week05.hotel_exercise.DTO.HotelDTO;
+import main.java.org.example.week05.hotel_exercise.DTO.HotelDTO;
 
 import java.util.ArrayList;
 import java.util.List;

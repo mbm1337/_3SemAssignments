@@ -1,4 +1,4 @@
-package org.example.week05.the_veterinarian;
+package main.java.org.example.week05.the_veterinarian;
 
 import io.javalin.http.Handler;
 

@@ -1,7 +1,6 @@
-package org.example.week06.security;
+package main.java.org.example.week06.security;
 
 import io.javalin.apibuilder.EndpointGroup;
-import org.example.week05.hotel_exercise.controller.HotelController;
 
 import static io.javalin.apibuilder.ApiBuilder.*;
 

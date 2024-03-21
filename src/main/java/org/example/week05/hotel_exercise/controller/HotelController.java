@@ -1,4 +1,4 @@
-package org.example.week05.hotel_exercise.controller;
+package main.java.org.example.week05.hotel_exercise.controller;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -11,9 +11,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.javalin.http.Handler;
 import io.javalin.http.HttpStatus;
-import org.example.week05.hotel_exercise.DAO.HotelDAO;
-import org.example.week05.hotel_exercise.ressources.Hotel;
-import org.example.week05.hotel_exercise.ressources.Room;
+import main.java.org.example.week05.hotel_exercise.DAO.HotelDAO;
+import main.java.org.example.week05.hotel_exercise.ressources.Hotel;
+import main.java.org.example.week05.hotel_exercise.ressources.Room;
 
 public class HotelController implements IController{
 
