@@ -1,8 +1,8 @@
-package main.java.org.example.week05.hotel_exercise.DAO;
+package org.example.week05.hotel_exercise.DAO;
 
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.TypedQuery;
-import main.java.org.example.week05.hotel_exercise.ressources.Hotel;
+import org.example.week05.hotel_exercise.ressources.Hotel;
 
 import java.util.Collection;
 import java.util.List;

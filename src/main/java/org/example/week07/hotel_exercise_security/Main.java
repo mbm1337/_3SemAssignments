@@ -1,16 +1,16 @@
-package main.java.org.example.week07.hotel_exercise_security;
+package org.example.week07.hotel_exercise_security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.javalin.Javalin;
 import io.javalin.apibuilder.EndpointGroup;
 import jakarta.persistence.EntityManagerFactory;
-import main.java.org.example.week07.hotel_exercise_security.DAO.HotelDAO;
-import main.java.org.example.week07.hotel_exercise_security.DAO.RoomDAO;
-import main.java.org.example.week07.hotel_exercise_security.config.HibernateConfig;
-import main.java.org.example.week07.hotel_exercise_security.controller.HotelController;
-import main.java.org.example.week07.hotel_exercise_security.controller.RoomController;
-import main.java.org.example.week07.hotel_exercise_security.ressources.Hotel;
-import main.java.org.example.week07.hotel_exercise_security.ressources.Room;
+import org.example.week07.hotel_exercise_security.DAO.HotelDAO;
+import org.example.week07.hotel_exercise_security.DAO.RoomDAO;
+import org.example.week07.hotel_exercise_security.config.HibernateConfig;
+import org.example.week07.hotel_exercise_security.controller.HotelController;
+import org.example.week07.hotel_exercise_security.controller.RoomController;
+import org.example.week07.hotel_exercise_security.ressources.Hotel;
+import org.example.week07.hotel_exercise_security.ressources.Room;
 
 
 import static io.javalin.apibuilder.ApiBuilder.*;

@@ -1,4 +1,4 @@
-package main.java.org.example.week07.hotel_exercise_security.exceptions;
+package org.example.week07.hotel_exercise_security.exceptions;
 
 public class ApiException extends RuntimeException{
     private int statusCode;

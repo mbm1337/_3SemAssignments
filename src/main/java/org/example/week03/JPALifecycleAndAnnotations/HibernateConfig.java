@@ -1,8 +1,8 @@
-package main.java.org.example.week03.JPALifecycleAndAnnotations;
+package org.example.week03.JPALifecycleAndAnnotations;
 
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
-import org.example.week03.JPAStarterProject.Person;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;

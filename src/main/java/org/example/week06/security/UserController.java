@@ -1,12 +1,13 @@
-package main.java.org.example.week06.security;
+package org.example.week06.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import io.javalin.http.Context;
 import jakarta.persistence.EntityManagerFactory;
-import main.java.org.example.week05.hotel_exercise.config.HibernateConfig;
-import main.java.org.example.week06.security.exception.AuthorizationException;
-import main.java.org.example.week06.security.model.User;
+import org.example.week05.hotel_exercise.config.HibernateConfig;
+import org.example.week06.security.exception.ApiException;
+import org.example.week06.security.exception.AuthorizationException;
+import org.example.week06.security.model.User;
 
 
 import java.util.Set;

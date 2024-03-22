@@ -1,8 +1,7 @@
-package main.java.org.example.week03.ThePointExercise;
+package org.example.week03.ThePointExercise;
 
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
-import org.example.week03.Unicorn.Unicorn;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;

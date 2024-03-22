@@ -1,4 +1,4 @@
-package main.java.org.example.week03.GLS;
+package org.example.week03.GLS;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;

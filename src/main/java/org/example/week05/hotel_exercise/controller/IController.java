@@ -1,4 +1,4 @@
-package main.java.org.example.week05.hotel_exercise.controller;
+package org.example.week05.hotel_exercise.controller;
 
 import io.javalin.http.Handler;
 

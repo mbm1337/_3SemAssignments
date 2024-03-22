@@ -1,4 +1,4 @@
-package main.java.org.example.week06.security;
+package org.example.week06.security;
 
 
 public enum RouteRoles implements io.javalin.security.RouteRole {

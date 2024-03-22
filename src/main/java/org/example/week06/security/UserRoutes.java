@@ -1,6 +1,7 @@
-package main.java.org.example.week06.security;
+package org.example.week06.security;
 
 import io.javalin.apibuilder.EndpointGroup;
+import org.example.week06.security.exception.ApiException;
 
 import static io.javalin.apibuilder.ApiBuilder.path;
 import static io.javalin.apibuilder.ApiBuilder.post;
@@ -16,7 +17,7 @@ public class UserRoutes {
                     try {
                         userController.login(ctx);
                     } catch (ApiException e) {
-                        ctx.status(400).result(e.getMessage());
+                        throw new RuntimeException(e);
                     }
                 }, RouteRoles.ANYONE);
 

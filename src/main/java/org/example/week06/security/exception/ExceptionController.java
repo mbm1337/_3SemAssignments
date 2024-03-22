@@ -1,11 +1,12 @@
-package main.java.org.example.week06.security.exception;
+package org.example.week06.security.exception;
 
 import io.javalin.http.Context;
 import io.javalin.validation.ValidationError;
 import io.javalin.validation.ValidationException;
-import main.java.org.example.week06.security.Routes;
+
 import okhttp3.internal.ws.RealWebSocket;
 
+import org.example.week06.security.Routes;
 import org.hibernate.exception.ConstraintViolationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package main.java.org.example.week03.JPQLQueries;
+package org.example.week03.JPQLQueries;
 
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;

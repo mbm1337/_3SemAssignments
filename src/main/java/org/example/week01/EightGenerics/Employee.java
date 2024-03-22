@@ -1,4 +1,4 @@
-package main.java.org.example.week01.EightGenerics;
+package org.example.week01.EightGenerics;
 
 import java.io.Serializable;
 

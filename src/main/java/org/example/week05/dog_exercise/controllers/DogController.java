@@ -1,8 +1,8 @@
-package main.java.org.example.week05.dog_exercise.controllers;
+package org.example.week05.dog_exercise.controllers;
 
 import io.javalin.http.Handler;
-
 import org.example.week05.dog_exercise.dtos.DogDTO;
+
 
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package main.java.org.example.week04.DolphinExercise;
+package org.example.week04.DolphinExercise;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;

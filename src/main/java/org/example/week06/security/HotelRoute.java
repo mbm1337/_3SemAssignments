@@ -1,4 +1,4 @@
-package main.java.org.example.week06.security;
+package org.example.week06.security;
 
 import io.javalin.apibuilder.EndpointGroup;
 

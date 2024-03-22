@@ -1,4 +1,4 @@
-package main.java.org.example.week03.JPAStarterProject;
+package org.example.week03.JPAStarterProject;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;

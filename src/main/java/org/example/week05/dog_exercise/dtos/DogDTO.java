@@ -1,4 +1,4 @@
-package main.java.org.example.week05.dog_exercise.dtos;
+package org.example.week05.dog_exercise.dtos;
 
 import lombok.*;
 

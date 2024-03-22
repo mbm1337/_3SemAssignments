@@ -1,4 +1,4 @@
-package main.java.org.example.week01.FiveMethodReferences;
+package org.example.week01.FiveMethodReferences;
 
 import java.util.Arrays;
 

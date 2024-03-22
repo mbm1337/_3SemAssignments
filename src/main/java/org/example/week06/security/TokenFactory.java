@@ -1,4 +1,4 @@
-package main.java.org.example.week06.security;
+package org.example.week06.security;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nimbusds.jose.JOSEException;
@@ -8,9 +8,11 @@ import com.nimbusds.jwt.SignedJWT;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
-import main.java.org.example.week06.security.dto.UserDTO;
-import main.java.org.example.week06.security.exception.AuthorizationException;
-import main.java.org.example.week05.hotel_exercise.config.ApplicationConfig;
+
+import org.example.week05.hotel_exercise.config.ApplicationConfig;
+import org.example.week06.security.dto.UserDTO;
+import org.example.week06.security.exception.ApiException;
+import org.example.week06.security.exception.AuthorizationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,4 +1,4 @@
-package main.java.org.example.week07.hotel_exercise_security.DAO;
+package org.example.week07.hotel_exercise_security.DAO;
 
 import jakarta.persistence.EntityManagerFactory;
 

@@ -1,4 +1,4 @@
-package main.java.org.example.week07.hotel_exercise_security.controller;
+package org.example.week07.hotel_exercise_security.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -9,16 +9,18 @@ import io.javalin.http.Handler;
 import io.javalin.http.HttpStatus;
 import io.javalin.validation.ValidationException;
 import jakarta.persistence.EntityExistsException;
-import main.java.org.example.week07.hotel_exercise_security.DTO.TokenDTO;
-import main.java.org.example.week07.hotel_exercise_security.DTO.UserDTO;
-import main.java.org.example.week07.hotel_exercise_security.config.HibernateConfig;
-import main.java.org.example.week07.hotel_exercise_security.exceptions.ApiException;
-import main.java.org.example.week07.hotel_exercise_security.exceptions.EntityNotFoundException;
-import main.java.org.example.week07.hotel_exercise_security.exceptions.NotAuthorizedException;
-import main.java.org.example.week07.hotel_exercise_security.persistence.ISecurityDAO;
-import main.java.org.example.week07.hotel_exercise_security.persistence.User;
-import main.java.org.example.week07.hotel_exercise_security.persistence.UserDAO;
-import main.java.org.example.week07.hotel_exercise_security.utils.TokenUtils;
+import jakarta.persistence.EntityNotFoundException;
+import org.example.week07.hotel_exercise_security.DTO.TokenDTO;
+import org.example.week07.hotel_exercise_security.DTO.UserDTO;
+import org.example.week07.hotel_exercise_security.config.HibernateConfig;
+import org.example.week07.hotel_exercise_security.exceptions.ApiException;
+import org.example.week07.hotel_exercise_security.exceptions.NotAuthorizedException;
+import org.example.week07.hotel_exercise_security.persistence.ISecurityDAO;
+import org.example.week07.hotel_exercise_security.persistence.UserDAO;
+import org.example.week07.hotel_exercise_security.persistence.User;
+import org.example.week07.hotel_exercise_security.utils.TokenUtils;
+
+
 
 import java.util.Date;
 import java.util.Set;

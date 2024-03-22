@@ -1,4 +1,4 @@
-package main.java.org.example.week04.GLS;
+package org.example.week04.GLS;
 
 import jakarta.persistence.*;
 import lombok.*;

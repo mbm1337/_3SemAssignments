@@ -1,4 +1,4 @@
-package main.java.org.example.week02.JsonDTOexercise;
+package org.example.week02.JsonDTOexercise;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

@@ -1,7 +1,7 @@
-package main.java.org.example.week07.hotel_exercise_security.controller;
+package org.example.week07.hotel_exercise_security.controller;
 
 import io.javalin.http.Handler;
-import main.java.org.example.week07.hotel_exercise_security.DTO.UserDTO;
+import org.example.week07.hotel_exercise_security.DTO.UserDTO;
 
 import java.util.Set;
 

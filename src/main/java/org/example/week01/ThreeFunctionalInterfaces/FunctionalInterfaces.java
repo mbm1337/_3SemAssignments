@@ -1,4 +1,4 @@
-package main.java.org.example.week01.ThreeFunctionalInterfaces;
+package org.example.week01.ThreeFunctionalInterfaces;
 
 import java.util.ArrayList;
 import java.util.Arrays;

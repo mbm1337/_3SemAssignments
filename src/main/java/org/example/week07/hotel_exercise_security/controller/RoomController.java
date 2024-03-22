@@ -1,9 +1,9 @@
-package main.java.org.example.week07.hotel_exercise_security.controller;
+package org.example.week07.hotel_exercise_security.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.javalin.http.Handler;
-import main.java.org.example.week07.hotel_exercise_security.DAO.RoomDAO;
+import org.example.week07.hotel_exercise_security.DAO.RoomDAO;
 
 
 public class RoomController implements IController {

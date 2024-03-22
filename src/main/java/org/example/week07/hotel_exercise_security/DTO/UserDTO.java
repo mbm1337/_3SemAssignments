@@ -1,9 +1,9 @@
-package main.java.org.example.week07.hotel_exercise_security.DTO;
+package org.example.week07.hotel_exercise_security.DTO;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import main.java.org.example.week07.hotel_exercise_security.persistence.User;
+import org.example.week07.hotel_exercise_security.persistence.User;
 
 import java.util.Set;
 

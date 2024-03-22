@@ -1,13 +1,14 @@
-package main.java.org.example.week07.hotel_exercise_security.utils;
+package org.example.week07.hotel_exercise_security.utils;
 
 import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.MACSigner;
 import com.nimbusds.jose.crypto.MACVerifier;
 import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
-import main.java.org.example.week07.hotel_exercise_security.DTO.UserDTO;
-import main.java.org.example.week07.hotel_exercise_security.exceptions.ApiException;
-import main.java.org.example.week07.hotel_exercise_security.exceptions.NotAuthorizedException;
+import org.example.week07.hotel_exercise_security.DTO.UserDTO;
+import org.example.week07.hotel_exercise_security.exceptions.ApiException;
+import org.example.week07.hotel_exercise_security.exceptions.NotAuthorizedException;
+
 
 import java.text.ParseException;
 import java.util.Arrays;

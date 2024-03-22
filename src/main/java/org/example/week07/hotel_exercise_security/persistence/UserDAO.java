@@ -1,9 +1,9 @@
-package main.java.org.example.week07.hotel_exercise_security.persistence;
+package org.example.week07.hotel_exercise_security.persistence;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
-import main.java.org.example.week07.hotel_exercise_security.config.HibernateConfig;
-import main.java.org.example.week07.hotel_exercise_security.exceptions.EntityNotFoundException;
+import org.example.week07.hotel_exercise_security.config.HibernateConfig;
+import org.example.week07.hotel_exercise_security.exceptions.EntityNotFoundException;
 
 public class UserDAO implements ISecurityDAO{
 

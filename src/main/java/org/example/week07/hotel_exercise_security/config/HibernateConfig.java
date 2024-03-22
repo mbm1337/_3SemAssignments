@@ -1,10 +1,11 @@
-package main.java.org.example.week07.hotel_exercise_security.config;
+package org.example.week07.hotel_exercise_security.config;
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
 
-
-import main.java.org.example.week07.hotel_exercise_security.ressources.Hotel;
-import main.java.org.example.week07.hotel_exercise_security.ressources.Room;
+import org.example.week07.hotel_exercise_security.persistence.Role;
+import org.example.week07.hotel_exercise_security.persistence.User;
+import org.example.week07.hotel_exercise_security.ressources.Hotel;
+import org.example.week07.hotel_exercise_security.ressources.Room;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -81,6 +82,8 @@ public class HibernateConfig {
         // add annotated classes
         configuration.addAnnotatedClass(Hotel.class);
         configuration.addAnnotatedClass(Room.class);
+        configuration.addAnnotatedClass(User.class);
+        configuration.addAnnotatedClass(Role.class);
 
     }
 

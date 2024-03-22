@@ -1,4 +1,4 @@
-package main.java.org.example.week02.ThreadsExercises;
+package org.example.week02.ThreadsExercises;
 import lombok.Getter;
 import okhttp3.OkHttpClient;
 import okhttp3.Response;

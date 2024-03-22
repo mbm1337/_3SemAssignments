@@ -1,4 +1,4 @@
-package main.java.org.example.week05.hotel_exercise.DTO;
+package org.example.week05.hotel_exercise.DTO;
 
 
 public record RoomDTO(

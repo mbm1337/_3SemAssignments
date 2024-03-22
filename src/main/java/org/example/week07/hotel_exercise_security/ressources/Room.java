@@ -1,9 +1,9 @@
-package main.java.org.example.week07.hotel_exercise_security.ressources;
+package org.example.week07.hotel_exercise_security.ressources;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
-import main.java.org.example.week07.hotel_exercise_security.DTO.RoomDTO;
+import org.example.week07.hotel_exercise_security.DTO.RoomDTO;
 
 
 @Entity

@@ -1,10 +1,10 @@
-package main.java.org.example.week06.security;
+package org.example.week06.security;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
-import main.java.org.example.week06.security.exception.AuthorizationException;
-import main.java.org.example.week06.security.model.Role;
-import main.java.org.example.week06.security.model.User;
+import org.example.week06.security.exception.AuthorizationException;
+import org.example.week06.security.model.Role;
+import org.example.week06.security.model.User;
 
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package main.java.org.example.week04.SchoolWxercise;
+package org.example.week04.SchoolWxercise;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;

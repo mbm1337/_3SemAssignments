@@ -1,7 +1,6 @@
-package main.java.org.example.week07.hotel_exercise_security.DTO;
+package org.example.week07.hotel_exercise_security.DTO;
 
-
-import main.java.org.example.week07.hotel_exercise_security.ressources.Room;
+import org.example.week07.hotel_exercise_security.ressources.Room;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package main.java.org.example.week05.dog_exercise;
+package org.example.week05.dog_exercise;
 
 
 import io.javalin.Javalin;
 import io.javalin.apibuilder.EndpointGroup;
-import main.java.org.example.week05.dog_exercise.controllers.DogController;
+import org.example.week05.dog_exercise.controllers.DogController;
 
 
 import static io.javalin.apibuilder.ApiBuilder.*;

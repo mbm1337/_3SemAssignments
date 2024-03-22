@@ -1,4 +1,4 @@
-package main.java.org.example.week05.hotel_exercise.DAO;
+package org.example.week05.hotel_exercise.DAO;
 
 import java.util.List;
 

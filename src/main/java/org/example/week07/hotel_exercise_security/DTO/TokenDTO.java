@@ -1,4 +1,4 @@
-package main.java.org.example.week07.hotel_exercise_security.DTO;
+package org.example.week07.hotel_exercise_security.DTO;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,6 +1,7 @@
-package main.java.org.example.week07.hotel_exercise_security.persistence;
+package org.example.week07.hotel_exercise_security.persistence;
 
-import main.java.org.example.week07.hotel_exercise_security.exceptions.EntityNotFoundException;
+
+import org.example.week07.hotel_exercise_security.exceptions.EntityNotFoundException;
 
 public interface ISecurityDAO {
     User createUser(String username, String password);

@@ -1,4 +1,4 @@
-package main.java.org.example.week07.hotel_exercise_security.config;
+package org.example.week07.hotel_exercise_security.config;
 
 import io.javalin.Javalin;
 

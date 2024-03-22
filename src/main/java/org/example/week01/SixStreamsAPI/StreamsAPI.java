@@ -1,4 +1,4 @@
-package main.java.org.example.week01.SixStreamsAPI;
+package org.example.week01.SixStreamsAPI;
 
 import java.util.ArrayList;
 import java.util.Comparator;

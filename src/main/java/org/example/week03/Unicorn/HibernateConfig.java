@@ -1,4 +1,4 @@
-package main.java.org.example.week03.Unicorn;
+package org.example.week03.Unicorn;
 
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;

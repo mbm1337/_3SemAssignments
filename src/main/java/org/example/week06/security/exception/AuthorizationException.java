@@ -1,4 +1,4 @@
-package main.java.org.example.week06.security.exception;
+package org.example.week06.security.exception;
 
 
 import lombok.Getter;

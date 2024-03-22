@@ -1,12 +1,12 @@
-package main.java.org.example.week05.hotel_exercise.config;
+package org.example.week05.hotel_exercise.config;
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
 
-import main.java.org.example.week05.hotel_exercise.ressources.Hotel;
-import main.java.org.example.week05.hotel_exercise.ressources.Room;
 
-import main.java.org.example.week06.security.model.Role;
-import main.java.org.example.week06.security.model.User;
+import org.example.week05.hotel_exercise.ressources.Hotel;
+import org.example.week05.hotel_exercise.ressources.Room;
+import org.example.week06.security.model.Role;
+import org.example.week06.security.model.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;

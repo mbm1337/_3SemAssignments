@@ -1,4 +1,4 @@
-package main.java.org.example.week02.ThreadsExercises;
+package org.example.week02.ThreadsExercises;
 
 
 import java.util.concurrent.Callable;

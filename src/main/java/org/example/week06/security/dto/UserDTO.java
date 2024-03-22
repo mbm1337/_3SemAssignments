@@ -1,10 +1,10 @@
-package main.java.org.example.week06.security.dto;
+package org.example.week06.security.dto;
 
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import main.java.org.example.week06.security.model.User;
+import org.example.week06.security.model.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,14 +28,7 @@ public class UserDTO {
         this.roles = user.getRolesAsStrings();
     }
 
-    public static List<UserDTO> toUserDTOList(List<User> users) {
-        List<UserDTO> userDTOList =  new ArrayList<>();
-        for (User user : users) {
-            userDTOList.add(new UserDTO(user.getUsername(), user.getRolesAsStrings().toArray(new String[0])));
-        }
-        return userDTOList;
 
-    }
 
     public String getUsername() {
         return username;

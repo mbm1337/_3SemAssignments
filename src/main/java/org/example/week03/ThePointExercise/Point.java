@@ -1,4 +1,4 @@
-package main.java.org.example.week03.ThePointExercise;
+package org.example.week03.ThePointExercise;
 
 import jakarta.persistence.*;
 import lombok.Getter;

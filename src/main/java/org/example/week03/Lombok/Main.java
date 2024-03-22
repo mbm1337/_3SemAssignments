@@ -1,4 +1,4 @@
-package main.java.org.example.week03.Lombok;
+package org.example.week03.Lombok;
 
 import jakarta.persistence.PersistenceException;
 

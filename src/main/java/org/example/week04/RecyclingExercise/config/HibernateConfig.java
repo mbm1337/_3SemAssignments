@@ -1,4 +1,4 @@
-package main.java.org.example.week04.RecyclingExercise.config;
+package org.example.week04.RecyclingExercise.config;
 
 import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;

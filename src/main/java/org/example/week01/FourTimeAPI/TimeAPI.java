@@ -1,4 +1,4 @@
-package main.java.org.example.week01.FourTimeAPI;
+package org.example.week01.FourTimeAPI;
 
 import java.util.*;
 import java.util.function.Predicate;

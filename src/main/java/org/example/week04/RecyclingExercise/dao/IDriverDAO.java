@@ -1,7 +1,9 @@
-package main.java.org.example.week04.RecyclingExercise.dao;
+package org.example.week04.RecyclingExercise.dao;
 
 
-import main.java.org.example.week04.RecyclingExercise.model.Driver;
+
+
+import org.example.week04.RecyclingExercise.model.Driver;
 
 import java.math.BigDecimal;
 import java.util.List;

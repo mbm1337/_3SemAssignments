@@ -1,12 +1,12 @@
-package main.java.org.example.week06.security;
+package org.example.week06.security;
 
 
 import io.javalin.Javalin;
 import io.javalin.apibuilder.EndpointGroup;
 import io.javalin.http.Context;
 import io.javalin.validation.ValidationException;
-import main.java.org.example.week06.security.exception.AuthorizationException;
-import main.java.org.example.week06.security.exception.ExceptionController;
+import org.example.week06.security.exception.AuthorizationException;
+import org.example.week06.security.exception.ExceptionController;
 import org.hibernate.exception.ConstraintViolationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

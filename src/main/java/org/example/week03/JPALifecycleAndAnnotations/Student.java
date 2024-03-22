@@ -1,4 +1,4 @@
-package main.java.org.example.week03.JPALifecycleAndAnnotations;
+package org.example.week03.JPALifecycleAndAnnotations;
 
 import jakarta.persistence.*;
 import lombok.Getter;

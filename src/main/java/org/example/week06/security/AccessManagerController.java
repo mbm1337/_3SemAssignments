@@ -1,11 +1,11 @@
-package main.java.org.example.week06.security;
+package org.example.week06.security;
 
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 import io.javalin.security.RouteRole;
-import main.java.org.example.week06.security.dto.UserDTO;
-import main.java.org.example.week06.security.exception.AuthorizationException;
-
+import org.example.week06.security.dto.UserDTO;
+import org.example.week06.security.exception.ApiException;
+import org.example.week06.security.exception.AuthorizationException;
 
 import java.util.Set;
 

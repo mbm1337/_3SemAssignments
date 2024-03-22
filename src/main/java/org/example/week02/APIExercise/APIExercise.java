@@ -1,4 +1,4 @@
-package main.java.org.example.week02.APIExercise;
+package org.example.week02.APIExercise;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

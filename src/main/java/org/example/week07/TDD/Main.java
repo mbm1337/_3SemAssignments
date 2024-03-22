@@ -1,4 +1,4 @@
-package main.java.org.example.week07.TDD;
+package org.example.week07.TDD;
 
 import java.util.ArrayList;
 import java.util.Arrays;

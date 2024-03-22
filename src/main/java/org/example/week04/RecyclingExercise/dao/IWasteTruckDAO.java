@@ -1,9 +1,9 @@
-package main.java.org.example.week04.RecyclingExercise.dao;
+package org.example.week04.RecyclingExercise.dao;
 
 
 
-import main.java.org.example.week04.RecyclingExercise.model.Driver;
-import main.java.org.example.week04.RecyclingExercise.model.WasteTruck;
+import org.example.week04.RecyclingExercise.model.Driver;
+import org.example.week04.RecyclingExercise.model.WasteTruck;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package main.java.org.example.week07.hotel_exercise_security.persistence;
+package org.example.week07.hotel_exercise_security.persistence;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

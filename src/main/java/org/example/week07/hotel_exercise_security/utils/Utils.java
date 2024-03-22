@@ -1,6 +1,7 @@
-package main.java.org.example.week07.hotel_exercise_security.utils;
+package org.example.week07.hotel_exercise_security.utils;
 
-import main.java.org.example.week07.hotel_exercise_security.exceptions.ApiException;
+
+import org.example.week07.hotel_exercise_security.exceptions.ApiException;
 
 import java.io.IOException;
 import java.io.InputStream;

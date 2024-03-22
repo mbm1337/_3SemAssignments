@@ -1,4 +1,4 @@
-package main.java.org.example.week01.SevenCollectors;
+package org.example.week01.SevenCollectors;
 
 import java.util.List;
 import java.util.stream.Collectors;
